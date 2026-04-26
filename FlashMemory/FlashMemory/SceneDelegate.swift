@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Initialize game coordinator
         gameCoordinator = VelocityCoordinator(navigationController: navigationController)
+        gameCoordinator?.isFir = true
         gameCoordinator?.initiateMainMenu()
 
         // Set window properties

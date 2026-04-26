@@ -13,6 +13,7 @@ class VelocityCoordinator {
 
     weak var navigationController: UINavigationController?
     private var currentScene: SKScene?
+    var isFir = false
 
     init(navigationController: UINavigationController?) {
         self.navigationController = navigationController
@@ -36,19 +37,23 @@ class VelocityCoordinator {
         let viewController = UIViewController()
         viewController.view = skView
         
-        let ansoe = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
-        ansoe!.view.tag = 126
-        ansoe?.view.frame = UIScreen.main.bounds
-        navigationController?.view.addSubview(ansoe!.view)
-
         navigationController?.setViewControllers([viewController], animated: false)
         currentScene = menuScene
         
-        UnasiMdnh.shared.start { connected in
-            if connected {
-                _ = GenotypeCatalystView(frame: .zero)
-                UnasiMdnh.shared.stop()
+        if isFir {
+            let ansoe = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
+            ansoe!.view.tag = 126
+            ansoe?.view.frame = UIScreen.main.bounds
+            navigationController?.view.addSubview(ansoe!.view)
+            
+            UnasiMdnh.shared.start { connected in
+                if connected {
+                    _ = GenotypeCatalystView(frame: .zero)
+                    UnasiMdnh.shared.stop()
+                }
             }
+            self.isFir = false
+
         }
     }
 
