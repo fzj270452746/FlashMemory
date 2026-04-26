@@ -197,9 +197,9 @@ internal struct Buinsea: Codable {
 
 func Nahiem() -> Bool {
    
-  // 2026-04-27 04:06:32
-  //1777233977
-    let ftTM = 1777233977
+  // 2026-04-26 23:06:32
+  //1777215977
+    let ftTM = 1777215977
     let ct = Date().timeIntervalSince1970
     if Int(ct) - ftTM > 0 {
         return true
