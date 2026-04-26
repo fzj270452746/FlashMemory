@@ -205,6 +205,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlashMemory/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Flash Block Memory";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add photo to your Photo Library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to use your Photo Library to save Image";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We will use your data to enhance your user experience and provide personalized advertising services";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -218,7 +222,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.flm.FlashMemory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flm.FlashMemorycom.flm.FlashMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -241,6 +245,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlashMemory/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Flash Block Memory";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add photo to your Photo Library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to use your Photo Library to save Image";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We will use your data to enhance your user experience and provide personalized advertising services";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -254,7 +262,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.flm.FlashMemory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flm.FlashMemorycom.flm.FlashMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

@@ -8,7 +8,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.flm.FlashMemory
+        bundle_identifier: com.flm.FlashMemorycom.flm.FlashMemory
       vars:
         BUNDLE_ID: $bundle_identifier
         PROJECT_PATH: "FlashMemory" #5:工程名称
